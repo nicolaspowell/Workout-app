@@ -1,0 +1,12 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Node modules (if you have them)
+node_modules/
+
+# Environment variables (secrets)
+.env

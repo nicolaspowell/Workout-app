@@ -5,6 +5,7 @@
     justify-content: space-around;
     margin: 20px auto 0px auto;
     max-width: 800px;
+    gap: 30px;
     
 }
 .contents{
@@ -22,6 +23,9 @@ form > label{
     display: flex;
     justify-content: center;
     color: white;
+}
+label input {
+    margin-left: 15px; 
 }
 img{
     width: 200px;

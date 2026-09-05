@@ -50,3 +50,6 @@ body{
     margin: 0 auto;
     list-style-type: none;
 }
+.line-through {
+    text-decoration: line-through;
+}

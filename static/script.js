@@ -31,6 +31,10 @@ function addExercise(exercise) {
     listItem.dataset.exercise = exercise;
     listItem.textContent = exercise;
     listItem.style.backgroundColor = "#2a2d56";
+    listItem.style.display = "flex";
+    listItem.style.alignItems = "center";
+    listItem.style.justifyContent = "center";
+    listItem.style.position = "relative";
     listItem.style.padding = "5px";
     listItem.style.margin = "5px 0";
     listItem.style.borderRadius = "5px";
@@ -39,14 +43,29 @@ function addExercise(exercise) {
     removeButton.type = "button";
     removeButton.textContent = "❌";
     removeButton.setAttribute("aria-label", `Remove ${exercise}`);
-    removeButton.style.marginLeft = "10px";
+    removeButton.style.position = "absolute";
+    removeButton.style.right = "45px";
+
+    const lineThroughButton = document.createElement("button");
+    lineThroughButton.type = "button";
+    lineThroughButton.textContent = "✔️";
+    lineThroughButton.setAttribute("aria-label", `Mark ${exercise} as completed`);
+    lineThroughButton.style.position = "absolute";
+    lineThroughButton.style.right = "5px";
 
     removeButton.addEventListener("click", () => {
         listItem.remove();
     });
 
+    lineThroughButton.addEventListener("click", () => {
+        listItem.classList.toggle("line-through");
+    });
+
+    
+
     routine.appendChild(listItem);
     listItem.appendChild(removeButton);
+    listItem.appendChild(lineThroughButton);
     
     
 }

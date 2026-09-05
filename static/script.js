@@ -22,14 +22,14 @@ function addExercise(exercise) {
     // Implementation to add an exercise
     const list = routine.querySelectorAll("li");
     for (const item of list){
-        if(item.textContent.includes(exercise)){
+        if(item.dataset.exercise === exercise){
             return;
         }
     }
 
     const listItem = document.createElement("li");
+    listItem.dataset.exercise = exercise;
     listItem.textContent = exercise;
-    listItem.style.color = "#ffffff";
     listItem.style.backgroundColor = "#2a2d56";
     listItem.style.padding = "5px";
     listItem.style.margin = "5px 0";

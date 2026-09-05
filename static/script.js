@@ -36,7 +36,9 @@ function addExercise(exercise) {
     listItem.style.borderRadius = "5px";
 
     const removeButton = document.createElement("button");
+    removeButton.type = "button";
     removeButton.textContent = "❌";
+    removeButton.setAttribute("aria-label", `Remove ${exercise}`);
     removeButton.style.marginLeft = "10px";
 
     removeButton.addEventListener("click", () => {

@@ -5,4 +5,4 @@ export const exercises = [
     { name: 'Overhead Press', muscle: 'Shoulders' },
     { name: 'Pull-up', muscle: 'Back' }
 ];
-export { exercises };
+// exercises is exported above via `export const exercises`

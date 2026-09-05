@@ -35,3 +35,18 @@ img{
 body{
     background-color: #1a1c2e;
 }
+.hidden{
+    display: none;
+}
+.workout-list-section {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    /*padding: 10px, 50px;*/
+    
+}
+.workout-list{
+    width: 400px;
+    margin: 0 auto;
+    list-style-type: none;
+}

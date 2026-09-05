@@ -20,22 +20,32 @@
     </form>
     <section class="workoutcards">
         <div class="contents" id="bench-press">
-            <img src="{{ url_for('static', filename='images/istockphoto-1028273740-612x612.jpg') }}" alt="Bench Press"/>
+            <!--<img src="{{ url_for('static', filename='images/istockphoto-1028273740-612x612.jpg') }}" alt="Bench Press"/>-->
             <h4>Bench Press</h4>
-            <button type = "button">Add</button>
+            <button type = "button" class = "button">Add</button>
         </div>
 
         <div class="contents" id="squat">
-            <img src="{{ url_for('static', filename='images/squat jit.jpg') }}" alt="Squat"/>
+            <!--<img src="{{ url_for('static', filename='images/squat jit.jpg') }}" alt="Squat"/>-->
             <h4>Squat</h4>
-            <button type = "button">Add</button>
+            <button type = "button" class = "button">Add</button>
         </div>
 
         <div class="contents" id="deadlift">
-            <img src="{{ url_for('static', filename='images/deadlift.jpg') }}" alt="Deadlift"/>
+            <!--<img src="{{ url_for('static', filename='images/deadlift.jpg') }}" alt="Deadlift"/>-->
             <h4>Deadlift</h4>
-            <button type = "button">Add</button>
+            <button type = "button" class = "button">Add</button>
         </div>
     </section>
+    <section class="workout-list-section">
+        <h3>Workout List</h3>
+        <div class="workout-list-container">
+            <button id="showListButton" type="button" class="button">Show Workout List</button>
+            <ul class="workout-list hidden" id="workoutList">
+                <!-- Workout items will be added here -->
+            </ul>
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

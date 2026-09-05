@@ -52,11 +52,11 @@ function addExercise(exercise) {
 }
 
 function filterExercises(workouts){
-    //learn to filer
+    // TODO: Implement filtering.
 }
 function findExercise(name) {
-    //learn to find
+    // TODO: Implement lookup.
 }
 function createArray() {
-    // Implementation to create an array
+    // TODO: Implement array creation.
 }

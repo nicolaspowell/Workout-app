@@ -1,4 +1,4 @@
-.workoutcards{
+.workout-cards{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -7,6 +7,13 @@
     max-width: 800px;
     gap: 30px;
     
+}
+.workout-card{
+    border: 1px solid rgb(59, 91, 234);
+    text-align: center;
+    color: white;
+    background-color: #2a2d56;
+    padding-bottom: 10px;
 }
 .contents{
     border: 1px solid rgb(59, 91, 234);
@@ -49,4 +56,22 @@ body{
     width: 400px;
     margin: 0 auto;
     list-style-type: none;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.nav-button {
+    display: inline-block;
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2a2d56;
+    color: white;
+}
+.nav-button-container{
+    display: flex;
+    justify-content: center;
 }

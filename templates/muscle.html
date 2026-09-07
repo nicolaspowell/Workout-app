@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Workouts</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class = "header">
+        <h1>YOUR WORKOUTS</h1>
+        <section class="workout-list-section">
+        <h3>Workout List</h3>
+        <div class="workout-list-container">
+            <button id="showListButton" type="button" class="button">Show Workout List</button>
+            <ul class="workout-list hidden" id="workoutList">
+                <!-- Workout items will be added here -->
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class = "nav-button-container">
+        <a href="{{ url_for('catalog') }}" class = "nav-button">Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

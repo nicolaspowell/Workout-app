@@ -119,9 +119,9 @@ function createExerciseListItem(exercise) {
 
     removeButton.addEventListener("click", () => {
         listItem.remove();
-        let routine = JSON.parse(localStorage.getItem("routine")) || [];
-        routine = routine.filter(item => item !== exercise);
-        localStorage.setItem("routine", JSON.stringify(routine));
+        let routineItems = JSON.parse(localStorage.getItem("routine")) || [];
+        routineItems = routineItems.filter(item => item !== exercise);
+        localStorage.setItem("routine", JSON.stringify(routineItems));
     });
 
     lineThroughButton.addEventListener("click", () => {

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise Catalog</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class = "header">
+        <h1>EXERCISE CATALOG</h1>
+        <h2>Welcome to the Exercise Catalog!</h2>
+    </div>
+
+    <div class="workout-cards">
+        {% for exercise in workouts %}
+
+            <div class="workout-card">
+                <h2>{{ exercise.name }}</h2>
+                <p>Muscle hit: {{ exercise.muscle }}</p>
+                <button type="button" class="button">Add</button>
+            </div>
+
+        {% endfor %}
+    </div>
+    <div class = "nav-button-container">
+        <a href="{{ url_for('muscle') }}" class = "nav-button">Routine</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

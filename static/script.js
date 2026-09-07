@@ -75,12 +75,12 @@ function addExercise(exercise) {
 } 
 */
 function addExercise(exercise) {
-    let routine = JSON.parse(localStorage.getItem("routine")) || [];
-    if(routine.includes(exercise)){
+    const routineItems = JSON.parse(localStorage.getItem("routine")) || [];
+    if (routineItems.includes(exercise)) {
         return;
     }
-    routine.push(exercise);
-    localStorage.setItem("routine", JSON.stringify(routine));
+    routineItems.push(exercise);
+    localStorage.setItem("routine", JSON.stringify(routineItems));
 }
 if (routine) {
     const savedRoutine =
